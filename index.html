@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="#">
+                    <img src="images/tesla.png" alt="logo tesla">
+                </a>        
+                <div class="menu-burger" onclick="openMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>  
+            </div>
+            <h1 class="roadster-header__title"> Roadster </h1>
+
+            <div class="roadster-description__text">
+                Самый быстрый автомобиль в мире, с рекордным ускорением, дальностью и производительностью.
+            </div>
+            
+            <a href="#">
+                <div class="test-drive__btn">
+                    Хочу тест драйв
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <div class="container">
+            <div class="close-btn" onclick="closeMenu()"></div>
+            <nav>
+                <div>
+                    <a href="#"><div class="menu-list">Узнать цену</div></a>
+                    <a href="#"><div class="menu-list">Характеристики</div></a>
+                    <a href="#"><div class="menu-list">Тест Драйв</div></a>
+                    <a href="#"><div class="menu-list">Новости</div></a>
+                    <a href="#"><div class="menu-list">Контакты</div></a>
+                </div>
+            </nav>        
+        </div>
+    </div>
+    
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slider_item--start slider_item" style="background-image: url(images/img_1.jpg)"></div>
+            <div class="slider_item" style="background-image: url(images/img_2.jpg);"></div>
+            <div class="slider_item" style="background-image: url(images/img_3.jpg);"></div>
+        </div>
+        <div class="dots">
+            <button class="dot-btn dot-btn--start" onclick="nextSlide(0)"></button>
+            <button class="dot-btn" onclick="nextSlide(1)"></button>
+            <button class="dot-btn" onclick="nextSlide(2)"></button>
+        </div>
+    </div> 
+
+    <script src="test.js"></script>  
+</body>
+</html>

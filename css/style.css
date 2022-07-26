@@ -1,0 +1,177 @@
+body{
+    font-size: 24px;
+    color: #FFF;
+    line-height: 28px;
+    background-color: #0B0B0B;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+
+/* header */
+header{
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.menu-burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1);
+}
+.menu-burger > div{
+    height: 2px;
+    width: 36px;
+    margin: 5px auto;
+    background-color: white;
+}
+.roadster-header__title{
+    font-family: Roboto;
+    font-size: 96px;
+    line-height: 112px;
+    margin-bottom: 40px;
+}
+.roadster-description__text{
+    max-width: 290px;
+    margin-bottom: 25px;
+}
+.test-drive__btn{
+    display: inline-block;
+    font-weight: 700;
+    padding: 30px 61px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #FFFFFF;
+}
+.test-drive__btn:hover{
+    background-color: #770302;
+}
+
+/* menu */
+.menu{
+    position: absolute;
+    left: -100%;
+    display: block;
+    z-index: 15;
+    width: 100%;
+    background-color: black;
+    transition: left 1s;
+}
+.menu .close-btn{
+    float: right;
+    position: relative;
+    margin-top: 55px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.menu .close-btn::after, .close-btn::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: 24px;
+    z-index: 25;
+    width: 70px;
+    height: 2px;
+    background-color: #fff;
+}
+.menu .close-btn::after{
+    transform: rotate( 45deg );
+}
+.menu .close-btn::before{
+    transform: rotate( -45deg );
+}
+.menu nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+.menu nav a{
+    display: block;
+    max-width: 368px;
+}
+.menu nav .menu-list{
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+    border-bottom: 3px solid  #B70021;
+    transition: border-bottom .4s;
+}
+.menu nav .menu-list:hover{
+    border-bottom: 3px solid  white;
+    margin-left: 38px;
+    transform: scale(1.2);
+}
+
+/* slider top */
+.slider-wrapper .slider{
+    height: 100vh;
+    background: none;
+    position: relative;
+}
+.slider-wrapper .slider_item{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: opacity 1s;
+}
+.slider-wrapper .slider .slider_item--start{
+    opacity: 1;
+}
+.slider-wrapper .dots{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-direction: row;
+}
+.slider-wrapper .dots .dot-btn{
+    position: relative;
+    z-index: 10;
+    margin: -26px 19px 0 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #0B0B0B;
+    display: block;
+    width: 15px;
+    height: 15px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.slider-wrapper .dots .dot-btn--start{
+    background-color: white;
+}
